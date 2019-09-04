@@ -1,0 +1,26 @@
+{
+  "name": "timetree-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "/usr/local/Cellar/node/11.0.0/bin/electron-packager  . 'TimeTree' --out './build' --overwrite -icon=timtree.png",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1"
+  },
+  "mac": {
+    "target": [
+      "default"
+    ],
+    "icon": "./timetree.png"
+  },
+  "dmg": {
+    "title": "TimeTree",
+    "icon": "./timetree.png"
+  }
+}
